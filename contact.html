@@ -1,0 +1,150 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connexta: Contact Us </title>
+	{% include head.html %} 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+</head>
+
+<body>
+
+<div class="content-wrap">
+	
+	{% include header.html %} 
+
+	<section class="contact-header-wrap">
+		<div class="container">
+			<h1>Contact Us</h1>
+		</div>
+	</section>
+
+	<section class="mission-wrap short gray">
+		<div class="container">
+			<div class="row">
+				<div class="mission-description" style="max-width: 750px; margin: 0 auto;">Connexta is a software development company delivering enterprise integration services to government and commercial customers globally.  Connexta is headquartered in Phoenix, AZ.</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-main-wrap medium white">
+		<div class="container">
+			
+			<div class="row">
+				<!-- <div class="main-social-media">
+					<a href="http://www.linkedin.com/company/connexta-llc" target="_blank" class="main-social-icon main-linkedin" title="See us on LinkedIn"></a>
+					<a href="https://github.com/connexta/" target="_blank" class="main-social-icon main-github" title="See us on Github"></a>
+					<a href="http://www.facebook.com/connexta" target="_blank" class="main-social-icon main-facebook" title="See us on Facebook"></a>
+					<a href="http://www.twitter.com/connexta" target="_blank" class="main-social-icon main-twitter" title="See us on Twitter"></a>
+				</div> -->
+
+
+				<div class="social-media">
+					<a href="http://www.linkedin.com/company/connexta" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/connexta/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="http://www.facebook.com/connexta" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://www.twitter.com/connexta" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</div>
+
+				<p class="contact-info">
+					Call <strong>602-714-1459</strong> or complete the form below.
+				</p>
+
+				<!-- <div class="email-form">
+					<script type="text/javascript" src="https://form.jotform.com/jsform/70296347718162"></script>
+				</div> -->
+
+				<script>
+					$(function(){
+			  			// intercept the form submission
+					    $("#contact-form").on("submit", function(e) {
+					        e.preventDefault(); // stop the form from being submitted
+					        // make an ajax POST request to the form's action
+					        $.ajax({
+					            type: "POST",
+					            url: $(this).attr("action"),      // use the form's action attribute as the endpoint
+					            data: $(this).serialize(),        // use the data from the form
+					            headers:
+					            {
+					               "Accept": "application/json"  // this makes the server send you a JSON response
+					            },
+					            success: function(response)       // handle the successful submission of your POST
+					            {
+					               console.log(response);     // response contains the form submission that was just made
+
+					               $("#contact-form")[0].reset();// reset the form
+					               $("#messages").show().text("Thank you for your submission. We'll get back to you soon");
+					            },
+					        });
+					    });
+					});
+				</script>
+
+				<div class="email-form">
+					<div id="messages" style="display: none"></div>
+
+					<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8" id="contact-form">
+						<input type="hidden" name="_utf8" value="✓">
+
+					    <label for="name">Name</label>
+						<input type="text" id="name" name="name"> <br />
+
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email"> <br />
+
+						<label for="message">Message</label>
+						<textarea id="message" name="message"></textarea>
+
+						<!-- recaptcha -->
+						<div class="g-recaptcha" data-sitekey="6LfT4CAUAAAAALSPFLMAxB1X6qJnw4QkaMyiF7PB" data-callback="enableSubmit"> </div>
+
+						<button type="submit" id="form-submit">Send Message</button>
+
+					</form>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	<section class="offices-wrap medium blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 arizona">
+					<h2 class="light">Arizona</h2>
+					<p class="light"><span class="address-line">1860 North 95th Lane, Suite 325</span><br/> <span class="address-line">Phoenix, AZ 85037</span></p>
+					<div class="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.294416434552!2d-112.26967318392661!3d33.467684780768906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b3fbe99d2afbd%3A0x85cd69f778e89654!2s1860+N+95th+Ln%2C+Phoenix%2C+AZ+85037!5e0!3m2!1sen!2sus!4v1490025199797" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-4 colorado">
+					<h2 class="light">Massachusetts</h2>
+					<p class="light"><span class="address-line">800 District Ave Suite 170</span><br/></span> <span class="address-line">Burlington, MA 01803</span></p>
+					<div class="map-responsive">
+						<iframe src="https://maps.google.com/maps?q=800%20District%20Ave%20Suite%20170&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-4 colorado">
+					<h2 class="light">Colorado</h2>
+					<p class="light"><span class="address-line">5660 Greenwood Plaza Blvd, Suite 210N</span><br/></span> <span class="address-line">Greenwood Village, CO 80111</span></p>
+					<div class="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12996.183277729553!2d-104.9054220459456!3d39.60953558248683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c86f3e73dd28b%3A0xb51dc46040c10a3c!2s5660+Greenwood+Plaza+Blvd+%23210n%2C+Greenwood+Village%2C+CO+80111!5e0!3m2!1sen!2sus!4v1504810193951" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include footer.html %} 
+
+</div>
+
+</body>
+
+</html>
