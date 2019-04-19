@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+{% include news_item.html %}
+{% endfor %}
+
+  <section class="news">
+    <div class="grid">
+
+      {% include news_contents_mobile.html %}
+
+      <div class="unit four-fifths">
+        {{ content }}
+      </div>
+
+      {% include news_contents.html %}
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  

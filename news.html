@@ -1,0 +1,131 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connexta: News</title>
+	{% include head.html %} 
+</head>
+
+<body>
+
+<div class="content-wrap">
+
+	{% include header.html %} 
+
+	<!-- <section class="std-title-heading">
+		<div class="container">
+			<h2 class="no-margin-top">News</h2>
+		</div>
+	</section> --> 
+
+	<section class="news-header-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>News</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+	{% for post in site.posts %}
+	{% include news_item.html %}
+	<p>{{ post.excerpt }}</p>
+					<p><a href="{{ post.url }}"> Read More</a></p>
+{% endfor %}
+	-->
+	NEWS TEMPLATE!!!  NEWS.HTML in ROOT
+
+	<section class="news-articles medium white">
+			{% for post in site.posts %}
+			<div class="article">
+					<div class="news-article-heading-wrap">
+							<div class="news-article-heading-image">
+						 
+							</div>
+						<h2 class="news-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					</div>
+		
+					<span class="publish-date"><strong>Date:</strong> 20 February 2019</span>
+					
+					<p>{{ post.excerpt }}</p>
+					<!--<p>{{ post.excerpt }}</p>-->
+					<p><a href="{{ post.url }}"> Read More</a></p>
+				</div>
+
+
+  
+    <!--	<p>{{ post.date | date_to_string }}</p>-->
+  
+{% endfor %}
+
+<!-- categories -->
+
+
+<h2>SIDEBAR STUFF</h2>
+{% for post in site.posts %}
+{% unless post.categories contains 'test' %}
+<li {%- if page.title == post.title %} class="current" {%- endif %}>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endunless %}
+{% endfor %}
+</ul>
+
+  
+ 
+	  <h4>Other News</h4>
+	  <ul>
+		{% for post in site.posts %}
+		  {% unless post.categories contains 'release' %}
+		  <li {%- if page.title == post.title %} class="current" {%- endif %}>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		  </li>
+		  {% endunless %}
+		{% endfor %}
+	  </ul>
+
+    <ul>
+				<li {%- if page.title == 'News' %} class="current" {%- endif %}>
+					<a href="/news/">All News</a>
+				</li>
+				<li {%- if page.title == 'Releases' %} class="current" {%- endif %}>
+					<a href="/news/releases/">Jekyll Releases</a>
+				</li>
+			</ul>
+			<h4>Recent Releases</h4>
+			<ul>
+				{% for post in site.categories.release limit:5 %}
+				<li {%- if page.title == post.title %} class="current" {%- endif %}>
+					<a href="{{ post.url }}">Version {{ post.version }}</a>
+				</li>
+				{% endfor %}
+				<li>
+					<a href="/docs/history/">History »</a>
+				</li>
+			</ul>
+			<h4>Other News</h4>
+			<ul>
+				{% for post in site.posts %}
+					{% unless post.categories contains 'release' %}
+					<li {%- if page.title == post.title %} class="current" {%- endif %}>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</li>
+					{% endunless %}
+				{% endfor %}
+			</ul>
+ 		
+ 
+
+	</section>
+
+{% include footer.html %} 	
+
+</div><!-- /content-wrap -->
+
+</body>
+
+</html>
