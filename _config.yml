@@ -47,8 +47,7 @@ github_username:
 #   - Gemfile.lock
 
 
-
-
+excerpt_separator: "<!-- more -->"
 
 collections:
   docs:

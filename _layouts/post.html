@@ -1,20 +1,60 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+	{% include head.html %} 
+</head>
 
-  <section class="news">
-    <div class="grid">
+<body>
 
-      {% include news_contents_mobile.html %}
+	<div class="content-wrap">	
 
-      <div class="unit four-fifths">
-        {{ content }}
-      </div>
+	{% include  header.html %} 
 
-      {% include news_contents.html %}
+	<!--
+	<section class="std-title-heading">
+		<div class="container">
+			<h2 class="no-margin-top">News</h2>
+		</div>
+	</section>  
+	-->
 
-      <div class="clear"></div>
+	<section class="news-header-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>News</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    </div>
-  </section>
+	<section class="news-articles medium white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="article">
+						<h2 class="news-title">{{ page.title }}</h2>
+						<span class="publish-date">{{ post.date | date: '%B %d, %Y' }}</span>
+						<p>{{ content }}</p>
+						<p><a href="{{ post.url }}" class="header-link" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					Sidebar
+				</div>
+			</div>
+		</div>		
+	</section>	
+ 
+ 
+{% include  footer.html %} 	
+
+</div><!-- /content-wrap -->
+
+</body>
+
+</html>
  
