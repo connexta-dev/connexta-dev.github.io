@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: pr
 title: Connexta, LLC secures contract supporting Joint Project 2096 Phase 1 
-category: Press Release
+category: Press Releases
 ---
 Connexta is pleased to support Leidos Australia Pty Ltd in delivery of integration software related to selected Intelligence, Surveillance, and Reconnaissance (ISR) data and applications under Joint Project 2096 Phase 1.  
 
@@ -13,27 +13,27 @@ Described by the Minister for Defence, the Hon Christopher Pyne MP, “This proj
 <!-- more -->
 “Connexta is pleased to partner with Leidos Australia to deliver DDF and Alliance to the Commonwealth. Deployed in operational environments for over 5 years, the capability is foundational for the JP2096 users.  Through the Leidos Industrial Participation Program, we also look forward to finding more opportunities to work with Australian SMEs.” Andy Goodson, Connexta CEO.   
  
-Joint Project 2096 will be delivered in two phases, each with a different capability objective. The $500 million Phase 1 will provide infrastructure and functionality to the Defence Secret Network to create a unified dataset that enables users to effectively manage ISR information and intelligence.  Phase 2 will extend the capability provided by Phase 1 in response to Australian Defence Organisation ISR capability requirements and priorities. 
-Connexta, LLC  
+<span style="color:#337ab7">Joint Project 2096</span> will be delivered in two phases, each with a different capability objective. The $500 million Phase 1 will provide infrastructure and functionality to the Defence Secret Network to create a unified dataset that enables users to effectively manage ISR information and intelligence.  Phase 2 will extend the capability provided by Phase 1 in response to Australian Defence Organisation ISR capability requirements and priorities. 
+
+<span style="color:#337ab7">Connexta, LLC </span> 
 A software development company delivering enterprise integration services to government and commercial customers globally.  Connexta develops secure, distributed intelligence processing capabilities breaking down third party proprietary restrictions enabling information sharing.  Connexta is headquartered in Phoenix, AZ, USA.   
-https://www.connexta.com/     
+<a href="https://www.connexta.com">https://www.connexta.com</a>  
  
-Leidos Australia  
+<span style="color:#337ab7">Leidos Australia </span>
 A regional leader in government, science and technology solutions. With over 20 year’s local experience, Leidos is working to solve the world’s toughest challenges in government, defence, intelligence, border protection, and health markets. With over 1200 local experts backed by our global experience and network of partners, Leidos Australia delivers solutions that help secure Australia.  
-https://www.leidos.com/company/global/australia  
+<a href="https://www.leidos.com/company/global/australia" target="_blank">https://www.leidos.com/company/global/australia</a> 
 ￼ 
+
 End -  
  
 Media Contact 
 Barbara M Perry, VP Strategy and Business Development  
 Telephone: 1. 602.753.3067  
-Email: barbara.perry@connexta.com 
+Email: <a href="mailto:barbara.perry@connexta.com">barbara.perry@connexta.com</a>  
  
 Connexta, LLC 
 1860 North 95th Lane, Suite 325 
 Phoenix, AZ 85037 
 <a href="https://www.connexta.com">https://www.connexta.com</a>
-Go to top:
-MEDIA RELEASE 
-5 March 2019 
+
  
